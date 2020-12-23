@@ -7,22 +7,16 @@ The code compiles with the Arduino IDE and can be used with other compatible MCU
 ## How to use the code
 ### AD5940/AD5941 library
 * Download the library files (ad5940.c and ad5940.h) from https://github.com/analogdevicesinc/ad5940lib
-* Make sure that c++ compiler is supported:
-
+* Make sure that c++ compiler is supported. The ad5940.h file should contain the following:
+```c++
 #ifdef __cplusplus
-
 extern "C" {
-
 #endif
-
 < content of .h file >
-
 #ifdef __cplusplus
-
 }
-
 #endif
-
+```
 * select the AD5940/AD5941 chip by uncommenting the following line in the ad5940.h file:
 
 #define CHIPSEL_594X      /**< AD5940 or AD5941 */
