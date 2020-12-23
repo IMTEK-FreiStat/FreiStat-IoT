@@ -12,6 +12,7 @@ Code is compatible with the AD5940!
 ## Library Requirements
 ### AD5940/AD5941 library
 * Download the library files (ad5940.c and ad5940.h) from https://github.com/analogdevicesinc/ad5940lib
+* Place the files into the project folder or create a folder "ad5940" in your local Arduino libraries directory
 * Make sure that c++ compiler is supported. The ad5940.h file should contain the following:
 ```c++
 #ifdef __cplusplus
@@ -34,13 +35,19 @@ extern "C" {
 ### LibPrintf
 * Download the Arduino Printf library from https://github.com/embeddedartistry/arduino-printf to add support for the `printf()` function
 
+### ArduinoPort.cpp
+This file is the bridge between the Adafruit/Arduino MCU and the AD5940/AD5941 library. It provides all functions (SPI communication and interrupts)
+to make the library work.
+* Place the file into the project folder or create a folder "ad5940" in your local Arduino libraries directory
+Include it in the project folder or in the 
 ## How to use the code
+* 
 * Ensure that no debug infos are output by commenting the following lines:
 1) ad5940.h file:
 ```c++
 //#define ADI_DEBUG   /**< Comment this line to remove debug info. */
 ```
-2) .ino file
+2) .ino file:
 ```c++
 //#define DEBUG
 ```
