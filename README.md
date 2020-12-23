@@ -3,8 +3,13 @@
 This repo contains code to run electrochemical measurements with the AD5940 or AD5941 potentiostat controlled by an Adafruit Feather M0 Wifi (MCU).
 The code compiles with the Arduino IDE and can be used with other compatible MCUs.
 ## Hardware
+The following hardware was used:
+* Adafruit Feather M0 Wifi
+* "AD5941 FeatherWing"
 
-## How to use the code
+Code is compatible with the AD5940!
+
+## Library Requirements
 ### AD5940/AD5941 library
 * Download the library files (ad5940.c and ad5940.h) from https://github.com/analogdevicesinc/ad5940lib
 * Make sure that c++ compiler is supported. The ad5940.h file should contain the following:
@@ -17,14 +22,19 @@ extern "C" {
 }
 #endif
 ```
-* select the AD5940/AD5941 chip by uncommenting the following line in the ad5940.h file:
+* Select the AD5940/AD5941 chip by uncommenting the following line in the ad5940.h file:
 ```c++
 #define CHIPSEL_594X      /**< AD5940 or AD5941 */
  ```
-* if you want to see debug info from the .c files (e.g. RampTest.c) uncomment the following line in the ad5940.h file:
+* If you want to see debug info from the .c files (e.g. RampTest.c) uncomment the following line in the ad5940.h file:
 ```c++
 #define ADI_DEBUG   /**< Comment this line to remove debug info. */
 ```
 
-###LibPrintf
-*Download the Arduino Printf library from https://github.com/embeddedartistry/arduino-printf to add support for the `printf()` function
+### LibPrintf
+* Download the Arduino Printf library from https://github.com/embeddedartistry/arduino-printf to add support for the `printf()` function
+
+## How to use the code
+* Compile and upload the code using the Arduino IDE or other compatible IDEs (e.g. Visual Studio Code with Arduino extension)
+* Set the correct COM port in the python script
+* Run the python script
