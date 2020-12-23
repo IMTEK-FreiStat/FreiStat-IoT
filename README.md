@@ -35,6 +35,15 @@ extern "C" {
 * Download the Arduino Printf library from https://github.com/embeddedartistry/arduino-printf to add support for the `printf()` function
 
 ## How to use the code
+* Ensure that no debug infos are output by commenting the following lines:
+1) ad5940.h file:
+```c++
+//#define ADI_DEBUG   /**< Comment this line to remove debug info. */
+```
+2) .ino file
+```c++
+//#define DEBUG
+```
 * Compile and upload the code using the Arduino IDE or other compatible IDEs (e.g. Visual Studio Code with Arduino extension)
 * Set the correct COM port in the python script
 * Run the python script
