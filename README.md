@@ -39,7 +39,7 @@ extern "C" {
 This file is the bridge between the Adafruit/Arduino MCU and the AD5940/AD5941 library. It provides all functions (SPI communication and interrupts)
 to make the library work.
 * Place the file into the project folder or create a folder "ad5940" in your local Arduino libraries directory
-Include it in the project folder or in the 
+
 ## How to use the code
 * 
 * Ensure that no debug infos are output by commenting the following lines:
