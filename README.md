@@ -18,9 +18,13 @@ extern "C" {
 #endif
 ```
 * select the AD5940/AD5941 chip by uncommenting the following line in the ad5940.h file:
-
+```c++
 #define CHIPSEL_594X      /**< AD5940 or AD5941 */
- 
+ ```
 * if you want to see debug info from the .c files (e.g. RampTest.c) uncomment the following line in the ad5940.h file:
-
+```c++
 #define ADI_DEBUG   /**< Comment this line to remove debug info. */
+```
+
+###LibPrintf
+*Download the Arduino Printf library from https://github.com/embeddedartistry/arduino-printf to add support for the `printf()` function
