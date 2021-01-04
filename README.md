@@ -1,6 +1,5 @@
 # FreiStat - AD5941 Potentiostat
-![](FreiStat.jpg)
-<img src="FreiStat.jpg" width="100">
+<img src="FreiStat.jpg" width="200">
 ## About
 This repo contains code to run electrochemical measurements with the AD5940 or AD5941 potentiostat controlled by an Adafruit Feather M0 Wifi (MCU).
 The code compiles with the Arduino IDE and can be used with other compatible MCUs.
