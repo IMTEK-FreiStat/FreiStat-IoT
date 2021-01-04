@@ -1,9 +1,14 @@
 # FreiStat - AD5941 Potentiostat
-<img src="FreiStat.jpg" width="500">
+Contributers:
+David Bill
+Jochen Kieninger, kieninger@imtek.uni-freiburg.de
+Laboratory for Sensors, IMTEK, University of Freiburg
+<img src="FreiStat.jpg" width="400">
 
 ## About
 This repo contains code to run electrochemical measurements with the AD5940 or AD5941 potentiostat controlled by an Adafruit Feather M0 Wifi (MCU).
-The code compiles with the Arduino IDE and can be used with other compatible MCUs.
+The code is based on the example code from Analog Devices. It compiles with the Arduino IDE and can be used with other compatible MCUs.
+
 ## Hardware
 The following hardware was used:
 * Adafruit Feather M0 Wifi
