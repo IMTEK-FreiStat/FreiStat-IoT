@@ -41,7 +41,6 @@ to make the library work.
 * Place the file into the project folder or create a folder "ad5940" in your local Arduino libraries directory
 
 ## How to use the code
-* 
 * Ensure that no debug infos are output by commenting the following lines:
 1) ad5940.h file:
 ```c++
