@@ -40,8 +40,26 @@ This file is the bridge between the Adafruit/Arduino MCU and the AD5940/AD5941 l
 to make the library work.
 * Place the file into the project folder or create a folder "ad5940" in your local Arduino libraries directory
 
+## Voltammetry Firmware
+This firmware allows to perform cyclic voltammetry or linear sweep voltammetry with the current averaging method. After each step the processed average values are sent to the serial port together with the applied voltage step.
+The CV_plotter.py script can be used to plot the values during the measurement (ensure that in firmware the `DEBUG` and `ADI_DEBUG` makros are uncommented).
+
+Configure the measurement (voltammetric method, ramp parameters, sampling frequency, potentiostat settings) with the `AD5940RampStructInit()` function.
+
+Specifications:
+* Excitation (cell) voltage range: +/- 1100mV (can be extended to +/- 2200mV with the `FIX_WE_POT` makro in RampTest.h)
+* Minimum potential step (Estep): 537 µV
+* Do not use scan rates higher than 100 mV/s with Estep = 1 mV
+
+## Chronoamperometry Firmware
+This firmware allows to perform chrononamperometry with the current averaging method. After a predefined number of current samples is averaged, the result is sent to the serial port.
+The CA_plotter.py script can be used to plot the values during the measurement (ensure that in firmware the `DEBUG` and `ADI_DEBUG` makros are uncommented).
+
+Configure the measurement (CA parameters, sampling frequency, potentiostat settings)) with the `AD5940AMPStructInit()` function.
+
+
 ## How to use the code
-* Ensure that no debug infos are output by commenting the following lines:
+* To use the python scripts for plotting and storing data in .csv files, ensure that no debug infos are output by commenting the following lines:
 1) ad5940.h file:
 ```c++
 //#define ADI_DEBUG   /**< Comment this line to remove debug info. */
@@ -50,6 +68,7 @@ to make the library work.
 ```c++
 //#define DEBUG
 ```
-* Compile and upload the code using the Arduino IDE or other compatible IDEs (e.g. Visual Studio Code with Arduino extension)
+* Compile and upload the (configured) code using the Arduino IDE or other compatible IDEs (e.g. Visual Studio Code with Arduino extension)
 * Set the correct COM port in the python script
+* Connect the Adafruit/Arduino via USB
 * Run the python script
