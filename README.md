@@ -7,7 +7,13 @@ The code compiles with the Arduino IDE and can be used with other compatible MCU
 ## Hardware
 The following hardware was used:
 * Adafruit Feather M0 Wifi
-* "AD5941 FeatherWing"
+* "AD5941 FeatherWing"-PCB with the following interface to the Adafruit M0 Wifi MCU:
+    - SPI (CS line connected to A5)
+    - AD5941 Reset connected to A4
+    - AD5941 GPIO0 (used as interrupt pin) connected to A1
+    - AD5941 GPIO1 connected to A2
+    - AD5941 GPIO2 connected to A3
+
 
 Code is compatible with the AD5940!
 
