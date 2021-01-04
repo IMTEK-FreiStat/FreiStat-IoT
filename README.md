@@ -1,4 +1,5 @@
 # FreiStat - AD5941 Potentiostat
+![bla](FreiStat.jpg)
 ## About
 This repo contains code to run electrochemical measurements with the AD5940 or AD5941 potentiostat controlled by an Adafruit Feather M0 Wifi (MCU).
 The code compiles with the Arduino IDE and can be used with other compatible MCUs.
@@ -49,13 +50,13 @@ Configure the measurement (voltammetric method, ramp parameters, sampling freque
 Specifications:
 * Excitation (cell) voltage range: +/- 1100mV (can be extended to +/- 2200mV with the `FIX_WE_POT` makro in RampTest.h)
 * Minimum potential step (Estep): 537 µV
-* Do not use scan rates higher than 100 mV/s with Estep = 1 mV
+* Do not use scan rates higher than 100 mV/s with Estep <= 1 mV
 
 ## Chronoamperometry Firmware
-This firmware allows to perform chrononamperometry with the current averaging method. After a predefined number of current samples is averaged, the result is sent to the serial port.
+This firmware allows to perform chrononamperometry. After a predefined number of current samples is averaged (necessary to reduce data output rate for USB communication), the result is sent to the serial port.
 The CA_plotter.py script can be used to plot the values during the measurement (ensure that in firmware the `DEBUG` and `ADI_DEBUG` makros are uncommented).
 
-Configure the measurement (CA parameters, sampling frequency, potentiostat settings)) with the `AD5940AMPStructInit()` function.
+Configure the measurement (CA parameters, sampling frequency, potentiostat settings) with the `AD5940AMPStructInit()` function.
 
 
 ## How to use the code
