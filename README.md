@@ -1,8 +1,12 @@
 # FreiStat - AD5941 Potentiostat
 Contributers:
+
 David Bill
+
 Jochen Kieninger, kieninger@imtek.uni-freiburg.de
+
 Laboratory for Sensors, IMTEK, University of Freiburg
+
 <img src="FreiStat.jpg" width="400">
 
 ## About
