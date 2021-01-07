@@ -8,7 +8,8 @@ Contact: Dr. Jochen Kieninger, kieninger@imtek.uni-freiburg.de
 <img src="FreiStat.jpg" width="400">
 
 ## About
-This repo contains code to run electrochemical measurements with the AD5940 or AD5941 potentiostat controlled by an Adafruit Feather M0 Wifi (MCU).
+This repo contains code to run electrochemical measurements with the Analog Devices AD5940 or AD5941 integrated potentiostat controlled by an Adafruit Feather M0 Wifi (MCU). It was created as part of a master thesis.
+
 The code is based on the example code from Analog Devices. It compiles with the Arduino IDE and can be used with other compatible MCUs.
 
 ## Hardware

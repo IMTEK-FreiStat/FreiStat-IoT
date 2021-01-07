@@ -1,0 +1,34 @@
+Stückliste exportiert aus D:/Studium_ESE/Masterarbeit/Potentiostat_Dev/EAGLE Design/AD5941-FeatherWing_Rev2/AD5941-FeatherWing_Rev2.sch am 07.01.2021 10:31
+
+Part  Value                          Device                         Package              Description                                                                                                               
+C1    0.1uF                          C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+C2    1uF                            C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+C3    0.47uF                         C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+C4    0.47uF                         C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+C5    4.7uF                          C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+C6    0.47uF                         C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+C7    0.47uF                         C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+C8    DNI [220pF]                    C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+C9    10uF                           C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+C10   0.1uF                          C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+C11   0.1uF                          C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+C12   10uF                           C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+C13   0.1uF                          C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+C14   10uF                           C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+C15   0.1uF                          C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+C16   0.1uF                          C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+CLPF  0.22uF                         C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+CTIA  100nF [220pF]                  C-EUC0603                      C0603                CAPACITOR, European symbol                                                                                                
+JP3                                  PINHD-2X5                      2X05                 PIN HEADER                                                                                                                
+L1    green                          LEDCHIPLED_0603                CHIPLED_0603         LED                                                                                                                       
+L2    red                            LEDCHIPLED_0603                CHIPLED_0603         LED                                                                                                                       
+MS1   FEATHERWING                    FEATHERWING                    FEATHERWING                                                                                                                                    
+R4    DNI [10k]                      R-EU_R0603                     R0603                RESISTOR, European symbol                                                                                                 
+R5    100                            R-EU_R0603                     R0603                RESISTOR, European symbol                                                                                                 
+R7    100                            R-EU_R0603                     R0603                RESISTOR, European symbol                                                                                                 
+RCAL  200                            R-EU_R0603                     R0603                RESISTOR, European symbol                                                                                                 
+RESET 1437566-3                      1437566-3                      14375663             TE CONNECTIVITY / ALCOSWITCH - 1437566-3 - PUSHBUTTON SWITCH, SPST, 0.05A, 24V                                            
+RTIA  DNI [10Meg]                    R-EU_R0603                     R0603                RESISTOR, European symbol                                                                                                 
+RTIA1 DNI [2k]                       R-EU_R0603                     R0603                RESISTOR, European symbol                                                                                                 
+SENSE SM04B-SRSS-TB_LFSN_            SM04B-SRSS-TB_LFSN_            SM04B-SRSS-TB(LFSN)  4 way side entry SMT header,1mm pitch JST SH Series, 1mm Pitch 4 Way 1 Row Right Angle PCB Header, Solder Termination, 1A 
+U1    AD5941BCPZCP-48-4_ADI-M_CUSTOM AD5941BCPZCP-48-4_ADI-M_CUSTOM CP-48-4_ADI-M_CUSTOM                                                                                                                           
