@@ -58,7 +58,7 @@ to make the library work.
 
 ## Voltammetry Firmware
 This firmware allows to perform cyclic voltammetry or linear sweep voltammetry with the current averaging method. After each step the processed average values are sent to the serial port together with the applied voltage step.
-The CV_plotter.py script can be used to plot the values during the measurement (ensure that in firmware the `DEBUG` and `ADI_DEBUG` makros are uncommented).
+The CV_plotter.py script can be used to plot the values during the measurement (ensure that in firmware the `DEBUG` and `ADI_DEBUG` makros are commented out).
 
 Configure the measurement (voltammetric method, ramp parameters, sampling frequency, potentiostat settings) with the `AD5940RampStructInit()` function.
 
@@ -69,7 +69,7 @@ Specifications:
 
 ## Chronoamperometry Firmware
 This firmware allows to perform chrononamperometry. After a predefined number of current samples is averaged (necessary to reduce data output rate for USB communication), the result is sent to the serial port.
-The CA_plotter.py script can be used to plot the values during the measurement (ensure that in firmware the `DEBUG` and `ADI_DEBUG` makros are uncommented).
+The CA_plotter.py script can be used to plot the values during the measurement (ensure that in firmware the `DEBUG` and `ADI_DEBUG` makros are commented out).
 
 Configure the measurement (CA parameters, sampling frequency, potentiostat settings) with the `AD5940AMPStructInit()` function.
 
