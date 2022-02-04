@@ -1,20 +1,27 @@
-# FreiStat - AD5941 Potentiostat
-Contributors: David Bill (major), Jochen Kieninger (minor)
+# FreiStat-IoT
+**A more recent framework for the FreiStat containing both the microcontroller firmware and a Python library is available [here](https://github.com/IMTEK-FreiStat/FreiStat-Framework).**
+  
+Contributors: 
+- David Bill
 
-Contact: Dr. Jochen Kieninger, kieninger@imtek.uni-freiburg.de
+Supervision:
+- Jochen Kieninger
+
+Contact: 
+- Dr. Jochen Kieninger, kieninger@imtek.uni-freiburg.de
 
 [Laboratory for Sensors](https://www.imtek.de/laboratories/sensors/sensors_home?set_language=en), IMTEK, University of Freiburg
 
 <img src="FreiStat.jpg" width="400">
 
-## About
-This repo contains code to run electrochemical measurements with the Analog Devices AD5940 or AD5941 integrated potentiostat controlled by an Adafruit Feather M0 Wifi (MCU). It was created as part of a master thesis.
+## About FreiStat-IoT
+This repo contains code to run electrochemical measurements with the [Analog Devices AD5940 or AD5941](https://www.analog.com/en/products/ad5940.html) integrated potentiostat controlled by an [Adafruit Feather M0 Wifi](https://www.adafruit.com/product/3010) (MCU). It was created as part of a master thesis.
 
 The code is based on the example code from Analog Devices. It compiles with the Arduino IDE and can be used with other compatible MCUs.
 
 ## Hardware
 The following hardware was used:
-* Adafruit Feather M0 Wifi
+* [Adafruit Feather M0 Wifi](https://www.adafruit.com/product/3010)
 * "AD5941 FeatherWing"-PCB with the following interface to the Adafruit M0 Wifi MCU:
     - SPI (CS line connected to A5)
     - AD5941 Reset connected to A4
@@ -27,8 +34,8 @@ Code is compatible with the AD5940!
 
 ## Library Requirements
 ### AD5940/AD5941 library
-* Download the library files (ad5940.c and ad5940.h) from https://github.com/analogdevicesinc/ad5940lib
-* Place the files into the project folder or create a folder "ad5940" in your local Arduino libraries directory
+* Download the library files ([ad5940.c and ad5940.h](https://github.com/analogdevicesinc/ad5940lib)) 
+* Place the files into the project folder or create a folder `ad5940` in your local Arduino libraries directory
 * Make sure that c++ compiler is supported. The ad5940.h file should contain the following:
 ```c++
 #ifdef __cplusplus
@@ -43,18 +50,18 @@ extern "C" {
 ```c++
 #define CHIPSEL_594X      /**< AD5940 or AD5941 */
  ```
-* If you want to see debug info from the .c files (e.g. RampTest.c) uncomment the following line in the ad5940.h file:
+* If you want to see debug info from the .c files (e.g., RampTest.c) uncomment the following line in the ad5940.h file:
 ```c++
 #define ADI_DEBUG   /**< Comment this line to remove debug info. */
 ```
 
 ### LibPrintf
-* Download the Arduino Printf library from https://github.com/embeddedartistry/arduino-printf to add support for the `printf()` function
+* Download the [Arduino Printf library](https://github.com/embeddedartistry/arduino-printf) to add support for the `printf()` function
 
 ### ArduinoPort.cpp
 This file is the bridge between the Adafruit/Arduino MCU and the AD5940/AD5941 library. It provides all functions (SPI communication and interrupts)
 to make the library work.
-* Place the file into the project folder or create a folder "ad5940" in your local Arduino libraries directory
+* Place the file into the project folder or create a folder `ad5940` in your local Arduino libraries directory
 
 ## Voltammetry Firmware
 This firmware allows to perform cyclic voltammetry or linear sweep voltammetry with the current averaging method. After each step the processed average values are sent to the serial port together with the applied voltage step.
@@ -75,7 +82,7 @@ Configure the measurement (CA parameters, sampling frequency, potentiostat setti
 
 
 ## How to use the code
-* To use the python scripts for plotting and storing data in .csv files, ensure that no debug infos are output by commenting the following lines:
+* To use the python scripts for plotting and storing data in .csv-files, ensure that no debug infos are output by commenting the following lines:
 1) ad5940.h file:
 ```c++
 //#define ADI_DEBUG   /**< Comment this line to remove debug info. */
